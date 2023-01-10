@@ -143,7 +143,7 @@ marquee{
   
   .right{
     border: 1px solid black;
-    margin: 20px;
+    margin: 10px;
     margin-top: -420px;
     width: 92.5%;
   }
@@ -179,44 +179,61 @@ marquee{
 
 
 
-
-
-
-
-
-
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 460px) {
   .main{
     display:inline;
   }
   .right{
     border: 1px solid black;
-    margin: 20px;
+    margin: 10px;
+    margin-top: -420px;
+    width: 92.5%;
+  }
+}
+
+
+
+@media screen and (max-width: 452px) {
+  .main{
+    display:inline;
+  }
+  .right{
+    border: 1px solid black;
+    margin: 10px;
     margin-top: -520px;
     width: 92.5%;
   }
 }
-
-
-@media screen and (max-width: 441px) {
+@media screen and (max-width: 438px) {
   .main{
     display:inline;
   }
   .right{
     border: 1px solid black;
-    margin: 20px;
-    margin-top: -580px;
+    margin: 10px;
+    margin-top: -620px;
     width: 92.5%;
   }
 }
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 317px) {
   .main{
     display:inline;
   }
   .right{
     border: 1px solid black;
-    margin: 20px;
-    margin-top: -630px;
+    margin: 10px;
+    margin-top: -820px;
+    width: 92.5%;
+  }
+}
+@media screen and (max-width: 303px) {
+  .main{
+    display:inline;
+  }
+  .right{
+    border: 1px solid black;
+    margin: 10px;
+    margin-top: -1190px;
     width: 92.5%;
   }
 }
