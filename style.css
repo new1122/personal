@@ -69,7 +69,8 @@ img{
   background-color: rgb(202, 199, 199);
 }
 marquee{
-  height: 400px;
+  position: relative;
+  height: 415px;
 }
 .timeline{
   border: 1px solid black;
@@ -89,6 +90,7 @@ marquee{
   width: 100%;
   border-radius: 0;
   margin-left: 0;
+
 }
 .circle1{
   height: 20px;
@@ -100,7 +102,11 @@ marquee{
   border-radius: 100%;
   background-color: rgb(153, 155, 154);
 }
-
+.timelineimage{
+  height: 180%;
+  width: 180%;
+  margin-left: -128px;
+}
 
 
 
@@ -145,7 +151,7 @@ marquee{
   img{
       border-radius: 100%;
       position: relative;
-      margin-top: 10px;
+      margin-top: 7%;
      margin-left: 39.5%;
       height: 25%;
       width: 25%;
@@ -162,7 +168,7 @@ marquee{
     border: 1px solid black;
     margin: 10px;
     margin-top: -420px;
-    width: 92.5%;
+    width: 97%;
   }
   .top{
     margin: 0;
@@ -179,7 +185,7 @@ marquee{
     height: 440px;  
     margin: 10px;
     margin-top: 0px;
-    width: 92.5%;
+    width: 94%;
     overflow: auto;
   } 
   
@@ -189,7 +195,11 @@ marquee{
     width: 0px;
     margin-left: 50%;  
   }
-  
+  .timelineimage{
+    height: 180%;
+    width: 180%;
+    margin-left: -105px;
+  }
 }
 
 
@@ -205,6 +215,11 @@ marquee{
     margin: 10px;
     margin-top: -420px;
     width: 92.5%;
+  } 
+   .timelineimage{
+    height: 180%;
+    width: 180%;
+    margin-left: -105px;
   }
 }
 
@@ -220,6 +235,11 @@ marquee{
     margin-top: -520px;
     width: 92.5%;
   }
+  .timelineimage{
+    height: 180%;
+    width: 180%;
+    margin-left: -90px;
+  }
 }
 @media screen and (max-width: 438px) {
   .main{
@@ -230,6 +250,11 @@ marquee{
     margin: 10px;
     margin-top: -620px;
     width: 92.5%;
+  }
+  .timelineimage{
+    height: 180%;
+    width: 180%;
+    margin-left: -80px;
   }
 }
 @media screen and (max-width: 317px) {
@@ -242,6 +267,11 @@ marquee{
     margin-top: -820px;
     width: 92.5%;
   }
+  .timelineimage{
+    height: 180%;
+    width: 180%;
+    margin-left: -70px;
+  }
 }
 @media screen and (max-width: 303px) {
   .main{
@@ -252,5 +282,10 @@ marquee{
     margin: 10px;
     margin-top: -1190px;
     width: 92.5%;
+  }
+  .timelineimage{
+    height: 180%;
+    width: 180%;
+    margin-left: -55px;
   }
 }
