@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bgimage">
+        <div class="nav">
+            <ul class="nameplate" style="font-size: 21px; font-family: cursive;">
+                <li>Acharya Abhishek Manishkumar</li>
+            </ul>
+            <ul style="font-size: 17px;">
+                <li class="homepage">Home</li>
+                <li>About Me</li>
+                <a href="timeline.html" style="text-decoration: none; color: black;">
+                    <li>TimeLine</li>
+                </a>
+                <li>Photos</li>
+                <li>Video</li>
+            </ul>
+        </div>
+    </div>
+    <!-- <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="recent/recent1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="recent/recent2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="recent/recent6.jpeg" alt="">
+            </div>
+            <div class="item">
+                <img src="recent/recent1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="recent/recent2.jpg" alt="">
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+     -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">1 / 3</div> -->
+            <img src="recent/recent6.jpeg" style="width:100%; height: 300px; width: 480px; object-fit: cover;">
+            <!-- <div class="text">Caption Text</div> -->
+        </div>
+
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">2 / 3</div> -->
+            <img src="recent/recent2.jpg" style="width:100%; height: 300px; width: 480px; object-fit: cover;">
+            <!-- <div class="text">Caption Two</div> -->
+        </div>
+
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">3 / 3</div> -->
+            <img src="recent/recent1.jpg" style="width:100%; height: 300px; width: 480px; object-fit: cover;">
+            <!-- <div class="text">Caption Three</div> -->
+        </div>
+
+    </div>
+
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</body>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+</script>
+
+</html>

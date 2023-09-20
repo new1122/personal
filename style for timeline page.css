@@ -1,0 +1,246 @@
+*{
+    background-color:black;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul{
+    position:absolute;
+    right: 5%;
+    top:5%
+}
+.nameplate{
+    position: absolute;
+    left: 0;
+    top: 5%;
+}
+.nav ul li{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.nav ul li:hover{
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+.nav ul li:active{
+    background-color: rgb(171, 194, 214);
+}
+.homepage{
+    background-color: azure;
+    color: black;
+}
+.homepage:hover{
+    color: aqua;
+}
+.slider{
+    /* margin-top: 20%; */
+    margin-left: 27%;
+    margin-top: 4%;
+    width: 1300px;
+    max-width: 50%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.slider .list img{
+    width: 1300px;
+    max-width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}
+
+nav{
+    background-color: black;
+    color: #fff;
+}
+ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+}
+li{
+    margin-left: 50px;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+.timeline{
+    position: absolute;
+    top: 15%;
+    width: 100%;
+}
+.imagefortimeline{
+    height: 80%;
+    width: 80%;
+    /* margin-left: 50%; */
+}
+.content{
+    text-align: right;
+    width: 45%;
+    padding-right: 5%;
+}
+.imagefortimeline2{
+    height: 80%;
+    width: 80%;
+    padding-left: 20%;
+    /* margin-left: 50%; */
+}
+.content2{
+    text-align: left;
+    width: 45%;
+    padding-left: 5%;
+}
+.btn1{
+    background-color: white;
+    color: #111;
+    border: 1px solid greenyellow;
+    font-size: 20px;
+    box-shadow: 2px 2px greenyellow;
+}
+.btn1:hover{
+    background-color: greenyellow;
+    color: red;
+    box-shadow: 2px 2px rgb(241, 51, 51);
+}
+
+
+
+
+
+
+.slideshow-container {
+    width: 70%;
+    position:fixed;
+    margin-left: 20%;
+    margin-bottom: 20%;
+    margin-top: -5%;
+
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  /* .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  } */
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+#myDIV{
+    display: none;
+    margin-top: 1%;
+}
+#myDIV1{
+    display: none;
+    margin-top: 1%;
+}
+.img1{
+    margin-top: 1%;
+    height: 80%;
+    width: 80%;
+    filter: contrast(130%);
+}

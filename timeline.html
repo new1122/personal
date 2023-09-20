@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style for timeline page.css">
+</head>
+
+<body id="body1">
+    <div class="nav" id="nav">
+        <ul class="nameplate" style="font-size: 21px; font-family: cursive;">
+            <li>Acharya Abhishek Manishkumar</li>
+        </ul>
+        <ul style="font-size: 17px;">
+            <a href="index1.html" style="text-decoration: none; color: black;">
+                <li>Home</li>
+            </a>
+            <li>About Me</li>
+            <a href="timeline.html" style="text-decoration: none; color: black;">
+                <li class="homepage">TimeLine</li>
+            </a>
+            <li>Photos</li>
+            <li>Video</li>
+        </ul>
+    </div>
+    </div>
+
+    <hr style="margin-top: 8%; position:sticky;" id="hr1">
+    </hr>
+    <table id="table1">
+
+
+
+
+        <tr>
+            <td class="content">
+                <h1 style="font-size: 45px;">2022</h1><br>
+                <h2 style="font-size: 40px;">December 2022</h2> <br>
+                <h3 style="font-size: 34px;">Janoi 2022...</h3> <br>
+                <button class="btn1" onclick="myFunction()">Click to See Photos</button>
+            </td>
+            <td>
+                <img src="recent/recent1.jpg" class="imagefortimeline" alt="">
+            </td>
+        </tr>
+        <div class="slideshow-container" id="myDIV">
+            <!-- <button style="font-size: 20px; background-color: white; color: black;" onclick="myfunction()">Close</button> -->
+            <button class="btn1" onclick="myFunction()">Close</button>
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">1 / 3</div> -->
+                <img src="recent/recent1.jpg" class="img1">
+                <!-- <div class="text">Caption Text</div> -->
+            </div>
+
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">2 / 3</div> -->
+                <img src="recent/recent2.jpg" class="img1">
+                <!-- <div class="text">Caption Two</div> -->
+            </div>
+
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">3 / 3</div> -->
+                <img src="recent/recent6.jpeg" class="img1">
+                <!-- <div class="text">Caption Three</div> -->
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <tr>
+            <td>
+                <img src="recent/recent1.jpg" class="imagefortimeline2" alt="">
+            </td>
+            <td class="content2">
+                <h1 style="font-size: 45px;">2021</h1><br>
+                <h2 style="font-size: 40px;">Month 2021</h2> <br>
+                <h3 style="font-size: 34px;">Function 2021...</h3> <br>
+                <button class="btn1" onclick="myFunction1()">Click to See Photos</button>
+            </td>
+
+        </tr>
+        <div class="slideshow-container" id="myDIV1">
+            <!-- <button style="font-size: 20px; background-color: white; color: black;" onclick="myfunction()">Close</button> -->
+            <button class="btn1" onclick="myFunction1()">Close</button>
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">1 / 3</div> -->
+                <img src="recent/recent1.jpg" class="img1">
+                <!-- <div class="text">Caption Text</div> -->
+            </div>
+
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">2 / 3</div> -->
+                <img src="recent/recent2.jpg" class="img1">
+                <!-- <div class="text">Caption Two</div> -->
+            </div>
+
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">3 / 3</div> -->
+                <img src="recent/recent6.jpeg" class="img1">
+                <!-- <div class="text">Caption Three</div> -->
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+
+
+
+
+
+        <tr>
+            <td class="content">
+                <h1 style="font-size: 45px;">2022</h1><br>
+                <h2 style="font-size: 40px;">December 2022</h2> <br>
+                <h3 style="font-size: 34px;">Janoi 2022...</h3> <br>
+                <button class="btn1">Click to See Photos</button>
+            </td>
+            <td>
+                <img src="recent/recent1.jpg" class="imagefortimeline" alt="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="recent/recent1.jpg" class="imagefortimeline2" alt="">
+            </td>
+            <td class="content2">
+                <h1 style="font-size: 45px;">2022</h1><br>
+                <h2 style="font-size: 40px;">December 2022</h2> <br>
+                <h3 style="font-size: 34px;">Janoi 2022...</h3> <br>
+                <button class="btn1">Click to See Photos</button>
+            </td>
+
+        </tr>
+
+
+
+
+
+
+    </table>
+
+</body>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+
+
+    function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+
+        var y = document.getElementById("table1");
+        if (y.style.display === "block") {
+            y.style.display = "none";
+        } else {
+            y.style.display = "block";
+        }
+
+        var z = document.getElementById("nav");
+        if (z.style.display === "block") {
+            z.style.display = "none";
+        } else {
+            z.style.display = "block";
+        }
+        var z1 = document.getElementById("hr1");
+        if (z1.style.display === "block") {
+            z1.style.display = "none";
+        } else {
+            z1.style.display = "block";
+        }
+    }
+    function myFunction1() {
+        var x = document.getElementById("myDIV1");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+        var y = document.getElementById("table1");
+        if (y.style.display === "block") {
+            y.style.display = "none";
+        } else {
+            y.style.display = "block";
+        }
+
+        var z = document.getElementById("nav");
+        if (z.style.display === "block") {
+            z.style.display = "none";
+        } else {
+            z.style.display = "block";
+        }
+        var z1 = document.getElementById("hr1");
+        if (z1.style.display === "block") {
+            z1.style.display = "none";
+        } else {
+            z1.style.display = "block";
+        }
+    }
+</script>
+
+</html>
